@@ -18,6 +18,7 @@
   "routes": {
     "/": "index.html",
     "/login/": "login.html",
-    "/sample/": "sample.html"
+    "/sample/": "sample.html",
+    "/promise/": "promise.html"
     }
 }
