@@ -1,0 +1,8 @@
+function task(x){ 
+    return new Promise((res, rej)=>{
+        if(x < 18)
+            res('yes')
+        else
+            rej('no')
+    });  
+} 
