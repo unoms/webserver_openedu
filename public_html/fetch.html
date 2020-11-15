@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <input type="text" id="inp">
+    <button id="bt">Fetch</button>
+
+    <script>
+        document.getElementById('bt').addEventListener('click', fetchData);
+
+        function fetchData(e){
+            let input = document.getElementById('inp');
+            let address = input.value;
+            let result = 12;
+            fetch(address)
+            .then(response=> response.text())
+            .then((data)=>{
+                result = data;
+                console.log(result)
+                input.value = data;
+            } )
+            .catch((err)=> console.log(err))
+        }
+
+    </script>
+</body>
+</html>
