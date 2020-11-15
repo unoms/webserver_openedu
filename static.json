@@ -1,9 +1,11 @@
 
 {
   "headers": {
-    "/": {
-      "X-Author": "unom",
+    "/*": {
       "Access-Control-Allow-Origin": "*"
+    }
+    "/": {
+      "X-Author": "unom"
     },
     "/login/": {
       "Access-Control-Allow-Origin": "*"
