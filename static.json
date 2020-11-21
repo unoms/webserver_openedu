@@ -18,7 +18,9 @@
     },
     "/result4/": {
       "Content-Type": "application/json",
-      "x-test": "XXX"
+      "x-test": "XXX",
+      "Access-Control-Allow-Methods": "GET,POST,PUT,DELETE,OPTIONS",
+      "Access-Control-Allow-Headers": "x-test,Content-Type,Accept,Access-Control-Allow-Headers"
     }
   },
   "routes": {
